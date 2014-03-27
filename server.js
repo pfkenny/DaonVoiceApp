@@ -1,6 +1,12 @@
 'use strict';
 
+var newrelic = require('newrelic');
 var express = require('express');
+var logfmt = require("logfmt");
+var twilio = require('twilio');
+var Firebase = require("firebase");
+var Async = require('async');
+
 
 /**
  * Main application file
@@ -14,11 +20,16 @@ var config = require('./lib/config/config');
 
 var app = express();
 
+app.use(logfmt.requestLogger());
+
+app.use(express.urlencoded());
+
 // Express settings
 require('./lib/config/express')(app);
 
 // Routing
 require('./lib/routes')(app);
+
 
 // Start server
 app.listen(config.port, function () {
