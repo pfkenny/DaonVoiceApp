@@ -1,7 +1,9 @@
 language: node_js
 node_js:
-  - '0.10'
+- '0.10'
 before_script:
-  - 'npm install -g bower grunt-cli'
-  - 'bower install'
-
+- npm install -g bower grunt-cli
+- bower install
+deploy:
+  api_key:
+    secure: brPhOk5tsl6EP9RY5XmZGqo9R20bpFDIWCY1L4uc0EYpAKVqe4cZ3vbR2YW+JSWaTvqyxU/2fvMD7G8vgtKGOHedzJON2hR7xBbLpoFnMctAL/RpucZqm/Yvxae7eNIspxfVncfHPJqA6K7A3MTMMfDYEjXYtG3PSsDf07ivvpE=
