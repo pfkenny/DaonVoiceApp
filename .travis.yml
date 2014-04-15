@@ -4,6 +4,16 @@ node_js:
 before_script:
 - npm install -g bower grunt-cli
 - bower install
-deploy:
-  api_key:
-    secure: brPhOk5tsl6EP9RY5XmZGqo9R20bpFDIWCY1L4uc0EYpAKVqe4cZ3vbR2YW+JSWaTvqyxU/2fvMD7G8vgtKGOHedzJON2hR7xBbLpoFnMctAL/RpucZqm/Yvxae7eNIspxfVncfHPJqA6K7A3MTMMfDYEjXYtG3PSsDf07ivvpE=
+env:
+  global:
+    - secure brPhOk5tsl6EP9RY5XmZGqo9R20bpFDIWCY1L4uc0EYpAKVqe4cZ3vbR2YW+JSWaTvqyxU/2fvMD7G8vgtKGOHedzJON2hR7xBbLpoFnMctAL/RpucZqm/Yvxae7eNIspxfVncfHPJqA6K7A3MTMMfDYEjXYtG3PSsDf07ivvpE=
+after_success:
+  - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+  - git remote add heroku git@heroku.com:daon-voice-app.git
+  - echo "Host heroku.com" >> ~/.ssh/config
+  - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
+  - echo "   CheckHostIP no" >> ~/.ssh/config
+  - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+  - heroku keys:clear
+  - yes | heroku keys:add
+  - yes | git push heroku master
