@@ -8,7 +8,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name : ['Daon Voice App'],
+  app_name : ['Daon_Voice_App'],
   /**
    * Your New Relic license key.
    */
