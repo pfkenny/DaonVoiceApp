@@ -30,6 +30,7 @@ require('./lib/config/express')(app);
 // Routing
 require('./lib/routes')(app);
 
+console.log('Using new relic key %s.',process.env.NEWRELIC_LICENSE);
 
 // Start server
 app.listen(config.port, function () {
