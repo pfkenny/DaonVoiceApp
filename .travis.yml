@@ -6,6 +6,7 @@ before_script:
 - bower install
 deploy:
   provider: heroku
-  api_key: "brPhOk5tsl6EP9RY5XmZGqo9R20bpFDIWCY1L4uc0EYpAKVqe4cZ3vbR2YW+JSWaTvqyxU/2fvMD7G8vgtKGOHedzJON2hR7xBbLpoFnMctAL/RpucZqm/Yvxae7eNIspxfVncfHPJqA6K7A3MTMMfDYEjXYtG3PSsDf07ivvpE="
+  api_key:
+    secure: d7Ki9vXXBJo84BuHgYZbn5Ax85/X0C4fDfdGxL5PXrXMehzKqiqE+qcJ/xbq1f9WQlsRSaEZuRYFmqXLEGFaJFU9Sb4XIavDooH/jiLicOR30C0haVewJ++VkxxY7FERU+NjlML8srvcRfddEyrbRmrfSZ4y0d3eiTWML41NMro=
   app: daon-voice-app
   skip_cleanup: true
