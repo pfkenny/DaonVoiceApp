@@ -3,9 +3,6 @@
 var newrelic = require('newrelic');
 var express = require('express');
 var logfmt = require("logfmt");
-var twilio = require('twilio');
-var Firebase = require("firebase");
-var Async = require('async');
 
 
 /**

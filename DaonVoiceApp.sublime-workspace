@@ -76,14 +76,15 @@
 	},
 	"file_history":
 	[
-		"/C/Tools/bin/env.bat",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/newrelic.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/package.json",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.bowerrc",
+		"/C/Tools/bin/env.bat",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/server.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/dist/server.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/routes.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/api.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/package.json",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.travis.yml",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/karma.conf.js",
 		"/C/temp/voix/Daon-DVM-Transform-Policy.xml"
