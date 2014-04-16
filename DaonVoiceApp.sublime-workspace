@@ -1,0 +1,255 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"daon",
+				"daon_voice_api"
+			],
+			[
+				"get",
+				"getCustomerByCallSid"
+			],
+			[
+				"ca",
+				"callSid"
+			],
+			[
+				"accu",
+				"accountNumber"
+			],
+			[
+				"reg",
+				"registered"
+			],
+			[
+				"is",
+				"isregistered"
+			],
+			[
+				"acc",
+				"accountNumber"
+			],
+			[
+				"req",
+				"require"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Tools/bin/env.bat",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/newrelic.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/server.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/dist/server.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/routes.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/api.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/package.json",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.travis.yml",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/karma.conf.js",
+		"/C/temp/voix/Daon-DVM-Transform-Policy.xml"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"/daonvoice/",
+			"/api/daonvoice/",
+			"twilio.webhook({\n  validate:validateTwilioAuth\n}),",
+			"e2e",
+			"partner",
+			"agent",
+			"\\$_SP_\\$100910([0-9]{3})?,\\$_SP_\\$10091,",
+			"INSERT INTO ROC_POINTS(ROC_POINT_INSTANCE_ID,ROC_INSTANCE_ID,RAW_SCORE_VALUE,FALSE_MATCH_RATE,FALSE_NON_MATCH_RATE) VALUES (    ",
+			"INSERT INTO ROC_POINTS(ROC_POINT_INSTANCE_ID,ROC_INSTANCE_ID,RAW_SCORE_VALUE,FALSE_MATCH_RATE,FALSE_NON_MATCH_RATE) VALUES (    9002150120([0-9]{3})?   ,       900215012       ,      ",
+			"\\$_SP_\\$100180([0-9]{3})?,\\$_SP_\\$10018,",
+			"\\$_SP_\\$100440([0-9]{3})?,\\$_SP_\\$10044,",
+			"\\$_SP_\\$100440([0-9]{3})?,\\$_SP_\\$10044",
+			"$_SP_$100440017,$_SP_$10044",
+			"\\$_SP_\\$100440([0-9]{3})?,\\$_SP_\\$10044",
+			"\\$_SP_\\$10044000([0-9])?,\\$_SP_\\$10044",
+			"\\$_SP_\\$100440?,\\$_SP_\\$10044",
+			"\\$_SP_\\$100440???,\\$_SP_\\$10044",
+			"\\$_SP_\\$100440([0-9])?,\\$_SP_\\$10044",
+			"\\$_SP_\\$100440({3}[0-9])?,\\$_SP_\\$10044",
+			"\\$_SP_\\$100440(002|003)?,\\$_SP_\\$10044",
+			"\\$_SP_\\$100440(002|003')?,\\$_SP_\\$10044",
+			"$_SP_$100440\\('002'\\|'003'\\)\\?,$_SP_$10044",
+			"$_SP_$100440\\('002'\\|'003'\\)?,$_SP_$10044",
+			"$_SP_$100440('002'|'003')?,$_SP_$10044",
+			"$_SP_$100440(002|003)?,$_SP_$10044",
+			"$_SP_$100440(002|003),$_SP_$10044",
+			"('$_SP_$100440002,$_SP_$10044')",
+			"('$_SP_$10044000?,$_SP_$10044')",
+			"('$_SP_$100440002,$_SP_$10044')",
+			"rs\\('$_SP_$100440002,$_SP_$10044'\\)",
+			"rs('$_SP_$100440002,$_SP_$10044')",
+			"rs('$_SP_$100440*,$_SP_$10044')",
+			"rs\\('$_SP_$100440*,$_SP_$10044'\\)",
+			"$_SP_$100440rs\\('*'\\),$_SP_$10044",
+			"$_SP_$100440rs\\(*\\),$_SP_$10044",
+			"$_SP_$100440*,$_SP_$10044",
+			"$_SP_$100440???,$_SP_$10044",
+			"$_SP_$100440001,$_SP_$10044,",
+			"regist",
+			"registraton",
+			"regist",
+			"reg",
+			"registration",
+			"registration.",
+			"registration",
+			"registration.",
+			"registrations",
+			"registration",
+			"interaction",
+			"call_details",
+			"interaction",
+			"registration",
+			"myRegistrationRef",
+			"getRegistrationByCallSid",
+			"accountNumbe",
+			"REsponse"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/api/daonvoice/",
+			"twilio.webhook(), api.daonVoiceAPI.greet);",
+			"",
+			"resp"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceDemo/DaonVoiceDemo.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 186.0,
+	"status_bar_visible": true
+}
