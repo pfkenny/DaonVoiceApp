@@ -17,8 +17,7 @@ after_success:
   - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
   - heroku keys:clear
   - yes | heroku keys:add
-  - yes | git fetch
-  - yes | git reset --hard origin/master
+  - yes | git pull heroku master
   - yes | git add .
   - yes | git commit -m "Add precompiled assets for Heroku"
   - yes | git push heroku master
