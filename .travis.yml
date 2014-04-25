@@ -5,6 +5,7 @@ before_script:
 - npm install -g bower grunt-cli
 - bower install
 - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+- mkdir dist
 - cd dist
 - git remote add heroku git@heroku.com:daon-voice-app.git
 - echo "Host heroku.com" >> ~/.ssh/config
