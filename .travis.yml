@@ -4,20 +4,22 @@ node_js:
 before_script:
 - npm install -g bower grunt-cli
 - bower install
+- wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+- cd dist
+- git remote add heroku git@heroku.com:daon-voice-app.git
+- echo "Host heroku.com" >> ~/.ssh/config
+- echo "   StrictHostKeyChecking no" >> ~/.ssh/config
+- echo "   CheckHostIP no" >> ~/.ssh/config
+- echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+- heroku keys:clear
+- yes | heroku keys:add
+- yes | git pull heroku master
+- cd ..
 env:
   global:
     secure: LrFU+eTaHuUiFisDkCiIXOeaHkSz9lmmv48usROxS5J4bM+WB5OWa5aZctVCiis0g2bw2CJ4fjOiHYLMjhc4UJfjVFUV/cR5ql1n76ZcoxUcVR4e60coxIbcUGrKhaCbsm/JpWXce0VBVvcAb6/4MEOrbIFiF0M10FG2uXSk6qU=
 after_success:
-  - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - cd dist
-  - git remote add heroku git@heroku.com:daon-voice-app.git
-  - echo "Host heroku.com" >> ~/.ssh/config
-  - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
-  - echo "   CheckHostIP no" >> ~/.ssh/config
-  - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
-  - heroku keys:clear
-  - yes | heroku keys:add
-  - yes | git pull heroku master
   - yes | git add .
   - yes | git commit -m "Add precompiled assets for Heroku"
   - yes | git push heroku master
