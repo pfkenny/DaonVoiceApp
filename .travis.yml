@@ -5,10 +5,7 @@ before_script:
 - npm install -g bower grunt-cli
 - bower install
 - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-env:
-  global:
-    secure: LrFU+eTaHuUiFisDkCiIXOeaHkSz9lmmv48usROxS5J4bM+WB5OWa5aZctVCiis0g2bw2CJ4fjOiHYLMjhc4UJfjVFUV/cR5ql1n76ZcoxUcVR4e60coxIbcUGrKhaCbsm/JpWXce0VBVvcAb6/4MEOrbIFiF0M10FG2uXSk6qU=
-after_success:
+- mkdir dist
 - cd dist
 - git init
 - yes | git config user.name "git"
@@ -23,4 +20,12 @@ after_success:
 - heroku keys:clear
 - yes | heroku keys:add
 - yes | git pull heroku master
+- yes cd ..
+env:
+  global:
+    secure: LrFU+eTaHuUiFisDkCiIXOeaHkSz9lmmv48usROxS5J4bM+WB5OWa5aZctVCiis0g2bw2CJ4fjOiHYLMjhc4UJfjVFUV/cR5ql1n76ZcoxUcVR4e60coxIbcUGrKhaCbsm/JpWXce0VBVvcAb6/4MEOrbIFiF0M10FG2uXSk6qU=
+after_success:
+- cd dist
+- yes | git add .
+- yes | git commit -a -m "Add precompiled assets for Heroku"
 - yes | git push heroku master
