@@ -10,8 +10,6 @@ before_script:
 - git init
 - yes | git config user.name "git"
 - yes | git config user.email "git@heroku.com"
-- yes | git add .
-- yes | git commit -a -m "Add precompiled assets for Heroku"
 - git remote add heroku git@heroku.com:daon-voice-app.git
 - echo "Host heroku.com" >> ~/.ssh/config
 - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
