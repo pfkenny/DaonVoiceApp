@@ -11,8 +11,6 @@ env:
 after_success:
 - cd dist
 - git init
-- yes | git add .
-- yes | git commit -a -m "Add precompiled assets for Heroku"
 - git remote add heroku git@heroku.com:daon-voice-app.git
 - echo "Host heroku.com" >> ~/.ssh/config
 - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
@@ -20,4 +18,6 @@ after_success:
 - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
 - heroku keys:clear
 - yes | heroku keys:add
+- yes | git add .
+- yes | git commit -a -m "Add precompiled assets for Heroku"
 - yes | git push heroku master
