@@ -76,16 +76,23 @@
 	},
 	"file_history":
 	[
+		"/C/Daon/Namibia RAN Platform v1.0.14.12330/Logs/RAN_log-file.txt",
+		"/C/Users/pkenny.DAON/Desktop/generated.txt",
+		"/C/Users/pkenny.DAON/Desktop/scanned.txt",
+		"/C/Users/pkenny.DAON/Desktop/Possible Solution Outlines for crossmatch meeting.txt",
+		"/C/Projects/2DBarcode/finger - Copy.tpl",
+		"/C/Projects/2DBarcode/finger.b64",
+		"/C/Tools/bin/env.bat",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.travis.yml",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/newrelic.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/Gruntfile.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/routes.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/server.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/package.json",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.bowerrc",
-		"/C/Tools/bin/env.bat",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/server.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/dist/server.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/routes.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/api.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.travis.yml",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/karma.conf.js",
 		"/C/temp/voix/Daon-DVM-Transform-Policy.xml"
 	],
@@ -105,6 +112,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Eric",
 			"/daonvoice/",
 			"/api/daonvoice/",
 			"twilio.webhook({\n  validate:validateTwilioAuth\n}),",
