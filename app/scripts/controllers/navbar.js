@@ -5,6 +5,8 @@ angular.module('daonVoiceAppApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+      'title': 'Accounts',
+      'link': '/accounts'
     }];
     
     $scope.isActive = function(route) {

@@ -12,6 +12,10 @@ angular.module('daonVoiceAppApp', [
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
+      .when('/accounts', {
+        templateUrl: 'partials/accounts',
+        controller: 'AccountsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
