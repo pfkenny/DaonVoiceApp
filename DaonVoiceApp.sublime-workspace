@@ -76,6 +76,17 @@
 	},
 	"file_history":
 	[
+		"/C/Projects/puppet/Puppet/modules/daonengine/templates/config.properties.erb",
+		"/C/Projects/puppet/Puppet/modules/daonengine/templates/deployment.properties.erb",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/navbar.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/accounts.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/main.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/main.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/accounts.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/api.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/app.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/config/config.js",
 		"/C/Daon/Namibia RAN Platform v1.0.14.12330/Logs/RAN_log-file.txt",
 		"/C/Users/pkenny.DAON/Desktop/generated.txt",
 		"/C/Users/pkenny.DAON/Desktop/scanned.txt",
@@ -88,11 +99,9 @@
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/Gruntfile.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/routes.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/server.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/package.json",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.bowerrc",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/dist/server.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/api.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/karma.conf.js",
 		"/C/temp/voix/Daon-DVM-Transform-Policy.xml"
 	],
@@ -112,6 +121,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"beep",
+			"hash",
 			"Eric",
 			"/daonvoice/",
 			"/api/daonvoice/",
