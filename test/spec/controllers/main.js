@@ -2,6 +2,29 @@
 
 describe('Controller: MainCtrl', function () {
 
+  if (!Function.prototype.bind) {
+    Function.prototype.bind = function (oThis) {
+      if (typeof this !== 'function') {
+        // closest thing possible to the ECMAScript 5
+        // internal IsCallable function
+        throw new TypeError('Function.prototype.bind - what is trying to be bound is not callable');
+      }
+
+      var aArgs = Array.prototype.slice.call(arguments, 1),
+          fToBind = this,
+          FNOP = function () {},
+          fBound = function () {
+            return fToBind.apply(this instanceof FNOP && oThis ? this : oThis,
+                   aArgs.concat(Array.prototype.slice.call(arguments)));
+          };
+
+      FNOP.prototype = this.prototype;
+      fBound.prototype = new FNOP();
+
+      return fBound;
+    };
+  }
+
   // load the controller's module
   beforeEach(module('daonVoiceAppApp'));
 
@@ -12,6 +35,7 @@ describe('Controller: MainCtrl', function () {
   // Initialize the controller and a mock scope
   beforeEach(inject(function (_$httpBackend_, $controller, $rootScope) {
     $httpBackend = _$httpBackend_;
+    $httpBackend.whenGET(/partials/).respond(200);//mimicking the AJAX call
     $httpBackend.expectGET('/api/awesomeThings')
       .respond(['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Express']);
     scope = $rootScope.$new();

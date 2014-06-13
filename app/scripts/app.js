@@ -4,7 +4,11 @@ angular.module('daonVoiceAppApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'firebase',
+  'angularfire.firebase',
+  'angularfire.login',
+  'simpleLoginTools'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
@@ -15,6 +19,11 @@ angular.module('daonVoiceAppApp', [
       .when('/accounts', {
         templateUrl: 'partials/accounts',
         controller: 'AccountsCtrl'
+      })
+      .when('/login', {
+        authRequired: false, // if true, must log in before viewing this page
+        templateUrl: 'partials/login.html',
+        controller: 'LoginController'
       })
       .otherwise({
         redirectTo: '/'
