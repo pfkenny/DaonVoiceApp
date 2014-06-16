@@ -3,9 +3,6 @@
     <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
         <a ng-href="{{item.link}}">{{item.title}}</a>
     </li>
-  </ul>
-  <ul class="nav nav-pills pull-right">
-
     <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#" ng-click="logout()">Log Out</a></li>
     <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
   </ul>
