@@ -17,6 +17,7 @@ angular.module('daonVoiceAppApp', [
         controller: 'MainCtrl'
       })
       .when('/accounts', {
+        authRequired: true, // if true, must log in before viewing this page
         templateUrl: 'partials/accounts',
         controller: 'AccountsCtrl'
       })
