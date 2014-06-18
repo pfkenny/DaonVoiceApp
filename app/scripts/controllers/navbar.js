@@ -4,10 +4,12 @@ angular.module('daonVoiceAppApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',
-      'link': '/'
+      'link': '/',
+      'state': 'logout,error,login'
     },{
       'title': 'Accounts',
-      'link': '/accounts'
+      'link': '/accounts',
+      'state' : 'login'
     }];
     
     $scope.isActive = function(route) {
