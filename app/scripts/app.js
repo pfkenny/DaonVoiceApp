@@ -6,9 +6,9 @@ angular.module('daonVoiceAppApp', [
   'ngSanitize',
   'ngRoute',
   'firebase',
+  'simpleLoginTools',
   'angularfire.firebase',
-  'angularfire.login',
-  'simpleLoginTools'
+  'angularfire.login'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
