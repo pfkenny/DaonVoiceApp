@@ -1,4 +1,4 @@
 Daon Voice App
 ==============
 
-Spike to investigate Twilio services
+Daon Voice Proof Of Liveness Client
