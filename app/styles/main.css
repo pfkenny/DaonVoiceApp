@@ -26,6 +26,7 @@ body {
 
 /* Custom page footer */
 .footer {
+  margin-top: 20px;
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
@@ -45,7 +46,15 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 0px;
+  background-image: url(../images/fraud.png);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  text-shadow: white 0.3em 0.3em 0.3em;
 }
+
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
@@ -76,6 +85,67 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 700px; 
+    height: 400px
+}
+
+.btn-custom-lighten.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn-custom-lighten {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f6d50e;
+  background-image: -moz-linear-gradient(top, #f0ce00, #ffe024);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f0ce00), to(#ffe024));
+  background-image: -webkit-linear-gradient(top, #f0ce00, #ffe024);
+  background-image: -o-linear-gradient(top, #f0ce00, #ffe024);
+  background-image: linear-gradient(to bottom, #f0ce00, #ffe024);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ce00', endColorstr='#ffffe024', GradientType=0);
+  border-color: #ffe024 #ffe024 #d6b800;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #ffe024;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-custom-lighten:hover, .btn-custom-lighten:focus, .btn-custom-lighten:active, .btn-custom-lighten.active, .btn-custom-lighten.disabled, .btn-custom-lighten[disabled] {
+  color: #ffffff;
+  background-color: #ffe024;
+  *background-color: #ffdc0a;
+}
+.btn-custom-lighten:active, .btn-custom-lighten.active {
+  background-color: #f0ce00;
+}
+
+/* Status Cell Styles */
+.processedStyle {
+  background-color: green;
+  color: black;
+}
+.pendingStyle {
+  background-color: yellow;
+  color: black;
+}
+.processingStyle {
+  background-color: white;
+  color: black;
+}
+.holdingStyle {
+  background-color: red;
+  color: black;
+}
+.expiredStyle {
+  background-color: gray;
+  color: black;
+}
+.removeStyle {
+  background-color: white;
+  color: black;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {

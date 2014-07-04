@@ -1,14 +1,22 @@
 <div class="header" ng-controller="NavbarCtrl">
-  <ul class="nav nav-pills pull-right">
-    <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}"  ng-show-auth="item.state">
-        <a ng-href="{{item.link}}">{{item.title}}</a>
-    </li>
-    <li ng-show-auth="login" ng-controller="LoginController">
-    	<a href="#" ng-click="logout()">Log Out</a>
-    </li>
-    <li ng-show-auth="['logout','error']"  ng-class="{active: isActive('/login')}">
-    	<a href="#/login">Log In</a>
-    </li>
-  </ul>
-  <h3 class="text-muted">daonVoiceApp</h3>
+  <!-- wait for auth to resolve (avoid flashing flashing menu items -->
+  <div class="row">
+      <div ng-cloak>
+        <ul  class="nav nav-pills pull-right">
+          <li ng-class="{active: isActive('/')}">
+            <a href="/">Home</a>
+          </li>
+          <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}" ng-show-auth="item.state">
+              <a ng-href="{{item.link}}">{{item.title}}</a>
+          </li>
+          <li ng-show-auth="login" ng-controller="LoginController">
+          	<a href="#" ng-click="logout()">Log Out</a>
+          </li>
+          <li ng-show-auth="['logout','error']"  ng-class="{active: isActive('/login')}">
+          	<a href="#/login">Log In</a>
+          </li>
+        </ul>
+      </div>
+    <h3 class="text-muted"><img width="50" height="50" src="apple-touch-icon.png" alt="Daon"> Daon</h3>
+  </div>
 </div>

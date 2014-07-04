@@ -11,6 +11,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'app/bower_components/jquery/dist/jquery.js',
       'app/bower_components/angular/angular.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/bower_components/angular-resource/angular-resource.js',
@@ -20,6 +21,9 @@ module.exports = function(config) {
       'app/bower_components/firebase/firebase.js',
       'app/bower_components/angularfire/angularfire.js',
       'app/bower_components/firebase-simple-login/firebase-simple-login.js',
+      'app/bower_components/lodash/dist/lodash.compat.js',
+      'app/bower_components/restangular/dist/restangular.js',
+      'app/bower_components/ng-grid/ng-grid-2.0.11.min.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',

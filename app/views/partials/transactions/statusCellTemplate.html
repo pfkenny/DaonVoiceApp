@@ -1,0 +1,7 @@
+<div ng-class="{processedStyle: row.getProperty(col.field) == 'Processed',
+				pendingStyle: row.getProperty(col.field) == 'Pending',
+				processingStyle: row.getProperty(col.field) == 'Processing',
+				holdingStyle: row.getProperty(col.field) == 'Holding',
+				expiredStyle: row.getProperty(col.field) == 'Expired'}">
+  <div class="ngCellText">{{row.getProperty(col.field)}}</div>
+</div>

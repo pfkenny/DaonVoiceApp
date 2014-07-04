@@ -56,23 +56,31 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/pkenny.DAON/Desktop/BIAS.wsdl",
+			"file": "app/views/index.html",
 			"settings":
 			{
-				"buffer_size": 136708,
+				"buffer_size": 3607,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/controllers/accounts.js",
+			"settings":
+			{
+				"buffer_size": 170,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 35.0,
 		"selected_items":
 		[
 			[
 				"pack",
-				"Package Control: Install Package"
+				"Preferences: Browse Packages"
 			],
 			[
 				"install",
@@ -83,7 +91,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 472.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -100,30 +108,40 @@
 	},
 	"file_history":
 	[
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/accounts.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/services/firebase.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/config.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/accounts.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/login.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/services/login.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/app.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/routesecurity.js",
 		"/C/Users/pkenny.DAON/Desktop/transaction.csv",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/routes.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/index.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
-		"/C/Users/pkenny.DAON/Downloads/daon-voice-demo-interactions-export.json",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/package.json",
+		"/C/Users/pkenny.DAON/Desktop/Changes.txt",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/README.md",
+		"/C/Users/pkenny.DAON/Desktop/voice1.wav",
+		"/C/Users/pkenny.DAON/Desktop/voice.txt",
+		"/C/Users/pkenny.DAON/Desktop/BIAS.wsdl",
+		"/C/Users/pkenny.DAON/Downloads/daon-voice-demo-interactions-export.json",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/bower.json",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/Gruntfile.js",
 		"/C/Users/pkenny.DAON/Downloads/daon-voice-demo-00000001-export.json",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/server.js",
 		"/C/Users/pkenny.DAON/Downloads/daon-voice-demo-customers-export.json",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/routesecurity.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/navbar.html",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/navbar.js",
 		"/C/Program Files (x86)/Griaule/ICAO Face SDK 2008/include/gricaoface.h",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/login.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/config.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/app.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/index.html",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/styles/main.css",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/main.html",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/main.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/simpleLoginTools.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/test/spec/controllers/main.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/accounts.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/accounts.html",
 		"/C/Projects/log.roo",
 		"/C/Projects/2DBarcode/finger.tpl",
 		"/C/Projects/puppet/Puppet (1_5_X)/modules/daonengine/templates/deployment.properties.erb",
@@ -142,7 +160,6 @@
 		"/C/Tools/bin/env.bat",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.travis.yml",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/newrelic.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/routes.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.bowerrc",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/dist/server.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/karma.conf.js",
@@ -154,7 +171,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"C:\\Users\\pkenny.DAON\\Documents\\GitHub\\DaonVoiceApp"
@@ -165,6 +182,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"firebaseRef",
+			"FBURL",
 			"BIASIdentity",
 			"BiographicDataType",
 			"BiographicDataSetType",
@@ -280,27 +299,54 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/pkenny.DAON/Desktop/BIAS.wsdl",
+					"file": "app/views/index.html",
 					"settings":
 					{
-						"buffer_size": 136708,
+						"buffer_size": 3607,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								89911,
-								89923
+								3565,
+								3565
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 32313.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/scripts/controllers/accounts.js",
+					"settings":
+					{
+						"buffer_size": 170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								170,
+								170
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
