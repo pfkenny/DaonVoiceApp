@@ -75,6 +75,10 @@ angular.module('angularfire.login', ['firebase', 'angularfire.firebase'])
         return ucfirst(email.substr(0, email.indexOf('@'))||'');
       }
 
+      function generateMask(id) {
+        return(parseInt(id.substr(id.lastIndexOf(':') + 1)) + 100).toString();
+      }
+
       function ucfirst (str) {
         // credits: http://kevin.vanzonneveld.net
         str += '';
@@ -82,7 +86,7 @@ angular.module('angularfire.login', ['firebase', 'angularfire.firebase'])
         return f + str.substr(1);
       }
 
-      firebaseRef('users/'+id).set({email: email, name: firstPartOfEmail(email)}, function(err) {
+      firebaseRef('users/'+id).set({email: email, name: firstPartOfEmail(email), mask: generateMask(id)}, function(err) {
         //err && console.error(err);
         if( callback ) {
           $timeout(function() {

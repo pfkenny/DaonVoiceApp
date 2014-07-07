@@ -127,6 +127,10 @@ body {
   background-color: green;
   color: black;
 }
+.successStyle {
+  background-color: green;
+  color: black;
+}
 .pendingStyle {
   background-color: yellow;
   color: black;
@@ -136,6 +140,10 @@ body {
   color: black;
 }
 .holdingStyle {
+  background-color: red;
+  color: black;
+}
+.failedStyle {
   background-color: red;
   color: black;
 }

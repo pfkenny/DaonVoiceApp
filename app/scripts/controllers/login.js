@@ -46,12 +46,16 @@ angular.module('daonVoiceAppApp')
         simpleLogin.createAccount($scope.email, $scope.pass, function(err, user) {
           if( err ) {
             $scope.err = err? err + '' : null;
-          }
-          else {
-            // must be logged in before I can write to my profile
-            $scope.login(function() {
-              simpleLogin.createProfile(user.uid, user.email);
-              $location.path('/account');
+          } else {
+            var createdUser = user;
+            createdUser = createdUser;
+            simpleLogin.loginPassword($scope.email, $scope.pass, function(loginErr, LoggedInUser) {
+              if (loginErr) {
+                $scope.err = loginErr? loginErr + '' : null;
+              } else {
+                simpleLogin.createProfile(LoggedInUser.uid, LoggedInUser.email);
+                $location.path('/');
+              }
             });
           }
         });
