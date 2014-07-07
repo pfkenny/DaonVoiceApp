@@ -47,7 +47,7 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 0px;
-  background-image: url(../images/fraud.png);
+  background-image: url(/images/fraud.png);
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat;
