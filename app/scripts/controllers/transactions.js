@@ -9,7 +9,7 @@ angular.module('daonVoiceAppApp')
 	(function tick() {
 		baseTransactions.getList().then(function(transactions) {
 		  $scope.transactions = transactions;
-		  $timeout(tick, 5000);
+		  $timeout(tick, 1000);
 		});
 	})();
 
