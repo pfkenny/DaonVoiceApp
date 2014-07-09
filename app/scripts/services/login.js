@@ -22,6 +22,11 @@ angular.module('angularfire.login', ['firebase', 'angularfire.firebase'])
         auth.$logout();
       },
 
+      getUserID: function() {
+        assertAuth();
+        return auth.user.uid;
+      },
+
 
       /**
        * @param {string} email

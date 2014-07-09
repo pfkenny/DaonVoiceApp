@@ -156,6 +156,52 @@ body {
   color: black;
 }
 
+.btn-add { 
+  color: #ffffff; 
+  background-color: #AAA; 
+  border-color: #EAEAEA; 
+} 
+ 
+.btn-add:hover, 
+.btn-add:focus, 
+.btn-add:active, 
+.btn-add.active, 
+.open .dropdown-toggle.btn-add { 
+  color: #ffffff; 
+  background-color: #EAEAEA; 
+  border-color: #EAEAEA; 
+} 
+ 
+.btn-add:active, 
+.btn-add.active, 
+.open .dropdown-toggle.btn-add { 
+  background-image: none; 
+} 
+ 
+.btn-add.disabled, 
+.btn-add[disabled], 
+fieldset[disabled] .btn-add, 
+.btn-add.disabled:hover, 
+.btn-add[disabled]:hover, 
+fieldset[disabled] .btn-add:hover, 
+.btn-add.disabled:focus, 
+.btn-add[disabled]:focus, 
+fieldset[disabled] .btn-add:focus, 
+.btn-add.disabled:active, 
+.btn-add[disabled]:active, 
+fieldset[disabled] .btn-add:active, 
+.btn-add.disabled.active, 
+.btn-add[disabled].active, 
+fieldset[disabled] .btn-add.active { 
+  background-color: #AAA; 
+  border-color: #EAEAEA; 
+} 
+ 
+.btn-add .badge { 
+  color: #AAA; 
+  background-color: #ffffff; 
+}
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }

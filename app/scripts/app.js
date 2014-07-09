@@ -10,7 +10,8 @@ angular.module('daonVoiceAppApp', [
   'angularfire.firebase',
   'angularfire.login',
   'restangular',
-  'ngGrid'
+  'ngGrid',
+  'ui.bootstrap'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
