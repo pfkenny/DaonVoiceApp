@@ -18,7 +18,9 @@ angular.module('daonVoiceAppApp')
 
 	//Function to poll rest resource and update the scope every second.
 	function pollForTransactions() {
+		$log.info('About to request transactions');
 		baseTransactions.getList({filter:$scope.filterOptions.filterText}).then(function(transactions) {
+		  $log.info('Got transactions');
 		  $scope.transactions = transactions;
 		  $timeout(pollForTransactions, 1000);
 		});
