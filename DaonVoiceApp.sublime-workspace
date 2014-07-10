@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"is",
+				"isMasked"
+			],
+			[
+				"pay",
+				"paymentNum"
+			],
+			[
+				"trans",
+				"transactionIID"
+			],
+			[
 				"verific",
 				"verificationDate"
 			],
@@ -40,10 +52,6 @@
 				"registered"
 			],
 			[
-				"is",
-				"isregistered"
-			],
-			[
 				"acc",
 				"accountNumber"
 			],
@@ -56,28 +64,24 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/index.html",
+			"file": "lib/controllers/api.js",
 			"settings":
 			{
-				"buffer_size": 3607,
+				"buffer_size": 7294,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/scripts/controllers/accounts.js",
-			"settings":
-			{
-				"buffer_size": 170,
-				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 35.0,
+		"height": 380.0,
 		"selected_items":
 		[
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
 			[
 				"pack",
 				"Preferences: Browse Packages"
@@ -108,40 +112,59 @@
 	},
 	"file_history":
 	[
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/accounts.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/services/firebase.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/config.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/accounts.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/login.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/services/login.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/app.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/routesecurity.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/transactions.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/api.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/addtransaction.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/transactions/addTransaction.html",
 		"/C/Users/pkenny.DAON/Desktop/transaction.csv",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/routes.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/index.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/transactions.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/services/login.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/routesecurity.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/login.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/navbar.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/accounts.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/simpleLoginTools.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/styles/main.css",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/transactions/removeTemplate.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/navbar.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/index.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/app.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/bower.json",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.bowerrc",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/bower_components/angular-ui-bootstrap-bower/ui-bootstrap.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/transactions/newTransaction.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/karma.conf.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/transactions/statusCellTemplate.html",
+		"/C/Users/pkenny.DAON/Downloads/daon-voice-demo-export.json",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/package.json",
+		"/C/temp/blah/app/views/main.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/main.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/login.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/main.js",
+		"/C/temp/blah/app/views/login.html",
+		"/C/temp/blah/app/scripts/angularfire/simpleLoginTools.js",
+		"/C/temp/blah/app/index.html",
+		"/C/temp/blah/karma.conf.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/services/firebase.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/accounts.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/robots.txt",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/test/spec/controllers/main.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/server.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/bower_components/angularfire/bower.json",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/config.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/index.js",
 		"/C/Users/pkenny.DAON/Desktop/Changes.txt",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/README.md",
 		"/C/Users/pkenny.DAON/Desktop/voice1.wav",
 		"/C/Users/pkenny.DAON/Desktop/voice.txt",
 		"/C/Users/pkenny.DAON/Desktop/BIAS.wsdl",
 		"/C/Users/pkenny.DAON/Downloads/daon-voice-demo-interactions-export.json",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/bower.json",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/Gruntfile.js",
 		"/C/Users/pkenny.DAON/Downloads/daon-voice-demo-00000001-export.json",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/server.js",
 		"/C/Users/pkenny.DAON/Downloads/daon-voice-demo-customers-export.json",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/navbar.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/navbar.js",
 		"/C/Program Files (x86)/Griaule/ICAO Face SDK 2008/include/gricaoface.h",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/login.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/index.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/styles/main.css",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/main.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/main.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/simpleLoginTools.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/test/spec/controllers/main.js",
 		"/C/Projects/log.roo",
 		"/C/Projects/2DBarcode/finger.tpl",
 		"/C/Projects/puppet/Puppet (1_5_X)/modules/daonengine/templates/deployment.properties.erb",
@@ -149,7 +172,6 @@
 		"/C/Projects/puppet/Puppet (1_5_X)/modules/daonengine/templates/config.properties.erb",
 		"/C/Projects/puppet/Puppet/modules/daonengine/templates/config.properties.erb",
 		"/C/Projects/puppet/Puppet/modules/daonengine/templates/deployment.properties.erb",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/api.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/config/config.js",
 		"/C/Daon/Namibia RAN Platform v1.0.14.12330/Logs/RAN_log-file.txt",
 		"/C/Users/pkenny.DAON/Desktop/generated.txt",
@@ -160,9 +182,7 @@
 		"/C/Tools/bin/env.bat",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.travis.yml",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/newrelic.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.bowerrc",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/dist/server.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/karma.conf.js",
 		"/C/temp/voix/Daon-DVM-Transform-Policy.xml"
 	],
 	"find":
@@ -171,7 +191,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"C:\\Users\\pkenny.DAON\\Documents\\GitHub\\DaonVoiceApp"
@@ -179,9 +199,21 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"param",
+			"&",
+			"&lt;",
+			"&",
+			"&quot;",
+			"http",
+			"newTransactionForm",
+			"once",
+			"user",
+			"auth.user.id",
+			"observe-js",
+			"observe",
 			"firebaseRef",
 			"FBURL",
 			"BIASIdentity",
@@ -280,13 +312,16 @@
 		"regex": false,
 		"replace_history":
 		[
+			"<",
+			"\"",
+			"addTransactionForm",
 			"/api/daonvoice/",
 			"twilio.webhook(), api.daonVoiceAPI.greet);",
 			"",
 			"resp"
 		],
 		"reverse": false,
-		"show_context": true,
+		"show_context": false,
 		"use_buffer2": true,
 		"whole_word": false,
 		"wrap": true
@@ -299,51 +334,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/index.html",
+					"file": "lib/controllers/api.js",
 					"settings":
 					{
-						"buffer_size": 3607,
+						"buffer_size": 7294,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3565,
-								3565
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 315.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/scripts/controllers/accounts.js",
-					"settings":
-					{
-						"buffer_size": 170,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								170,
-								170
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -360,7 +369,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -385,6 +394,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
 	"output.git":
 	{
 		"height": 100.0
@@ -418,6 +431,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 186.0,
+	"side_bar_width": 297.0,
 	"status_bar_visible": true
 }

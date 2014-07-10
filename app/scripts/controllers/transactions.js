@@ -13,15 +13,16 @@ angular.module('daonVoiceAppApp')
 	$scope.users.child($scope.currUserId).once('value', function(snapshot){
 		var userProfile = snapshot.val();
 		$scope.filterOptions.filterText = userProfile.mask;
+		pollForTransactions();
 	});
 
 	//Function to poll rest resource and update the scope every second.
-	(function tick() {
-		baseTransactions.getList().then(function(transactions) {
+	function pollForTransactions() {
+		baseTransactions.getList({filter:$scope.filterOptions.filterText}).then(function(transactions) {
 		  $scope.transactions = transactions;
-		  $timeout(tick, 1000);
+		  $timeout(pollForTransactions, 1000);
 		});
-	})();
+	}
 
 	$scope.gridOptions = { data: 'transactions',
 						   filterOptions: $scope.filterOptions,
