@@ -42,7 +42,7 @@ angular.module('daonVoiceAppApp')
 				$scope.transactions = transactions;
 			});
 		});
-		$scope.transactions.splice(this.row.rowIndex,1);
+		//$scope.transactions.splice(this.row.rowIndex,1);
 	};
 
 	$scope.open = function () {
