@@ -36,9 +36,11 @@ angular.module('daonVoiceAppApp')
 
 	$scope.removeRow = function() {
 		$scope.transactions[this.row.rowIndex].remove().then(function(){
-			baseTransactions.getList();
+			baseTransactions.getList({filter:$scope.filterOptions.filterText}).then(function(transactions) {
+				$scope.transactions = transactions;
+			});
 		});
-		$scope.transactions.splice(this.row.rowIndex,1);
+		//$scope.transactions.splice(this.row.rowIndex,1);
 	};
 
 	$scope.open = function () {
@@ -49,7 +51,7 @@ angular.module('daonVoiceAppApp')
 		});
 		modalInstance.result.then(function (result) {
 			$log.info('Transaction ' + result + ' at: ' + new Date());
-			baseTransactions.getList().then(function(transactions) {
+			baseTransactions.getList({filter:$scope.filterOptions.filterText}).then(function(transactions) {
 				$scope.transactions = transactions;
 			});
 		}, function (result) {
