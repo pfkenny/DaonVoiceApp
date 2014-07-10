@@ -16,7 +16,7 @@
 		<div class="form-group" ng-class="{ 'has-error' : addTransactionForm.idxpolicy.$invalid && !addTransactionForm.idxpolicy.$pristine }">
 			<label for="idxpolicy" class="col-sm-2 control-label">IdentityX Policy</label>
 			<div class="col-sm-10">
-				<input type="text" name="idxpolicy" typeahead="policy for policy in policies | filter:$viewValue | limitTo:8" ng-model="newTransactionInput.idxpolicy" class="form-control" placeholder="Pol-Voice-Face" value="Pol-Voice-Face" required>
+				<input type="text" name="idxpolicy" typeahead="policy for policy in policies | filter:$viewValue | limitTo:8" ng-model="newTransactionInput.idxpolicy" class="form-control" placeholder="Pol-Open" required>
 				<p ng-show="addTransactionForm.idxpolicy.$invalid && !addTransactionForm.idxpolicy.$pristine" class="help-block">An IdentityX Policy must be specified.</p>
 			</div>
 		</div>

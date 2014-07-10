@@ -4,10 +4,10 @@ angular.module('daonVoiceAppApp')
   .controller('AddTransactionCtrl', function ($scope, $modalInstance, $log, Restangular, firebaseRef, simpleLogin) {
   var baseTransactions = Restangular.all('api/transactions');
 
-  $scope.policies = ['Pol-Voice', 'Pol-Face', 'Pol-Voice-Face', 'Pol-FaceG'];
+  $scope.policies = ['Pol-Open', 'Pol-Voice', 'Pol-Face', 'Pol-Voice-Face', 'Pol-FaceG'];
   $scope.users = firebaseRef('users');
   $scope.currUserId = simpleLogin.getUserID();
-  $scope.newTransactionInput = {txuserid: '', idxpolicy: 'Pol-Voice-Face'};
+  $scope.newTransactionInput = {txuserid: '', idxpolicy: 'Pol-Open'};
   $scope.addTransactionProcessing = {status: false};
 
   $scope.ok = function () {
