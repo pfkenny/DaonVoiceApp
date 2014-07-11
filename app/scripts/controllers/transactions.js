@@ -22,6 +22,7 @@ angular.module('daonVoiceAppApp')
 		baseTransactions.getList({filter:$scope.filterOptions.filterText}).then(function(transactions) {
 		  $log.info('Got transactions');
 		  $scope.transactions = transactions;
+		  baseTransactions = transactions;
 		  $timeout(pollForTransactions, 1000);
 		});
 	}
