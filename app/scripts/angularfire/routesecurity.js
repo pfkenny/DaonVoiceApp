@@ -2,6 +2,7 @@
   'use strict';
   angular.module('daonVoiceAppApp')
     .run(function ($injector, $location, $rootScope, waitForAuth, loginRedirectPath) {
+      /*
       if($location.path() === '/')
       {
         waitForAuth.then(function() {
@@ -12,6 +13,8 @@
       } else {
         new RouteSecurityManager($location, $rootScope, $injector.get('$route'), loginRedirectPath);
       }
+      */
+      new RouteSecurityManager($location, $rootScope, $injector.get('$route'), loginRedirectPath);
     });
 
   function RouteSecurityManager($location, $rootScope, $route, path) {
