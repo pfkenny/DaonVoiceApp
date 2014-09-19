@@ -1,13 +1,13 @@
 'use strict';
 
 angular.module('daonVoiceAppApp')
-  .controller('TransactionsCtrl', function ($scope, $timeout, Restangular, $modal, $log, firebaseRef, simpleLogin) {
+  .controller('TransactionsCtrl', function ($scope, $timeout, Restangular, $modal, $log, firebaseRef, simpleLogin, $interval) {
 	var baseTransactions = Restangular.all('api/transactions');
 	$scope.transactions = [];
 	$scope.filterOptions = {
 		filterText: ''
 	};
-	$scope.polling = false;
+	var polling;
 
 	$scope.users = firebaseRef('users');
 	$scope.currUserId = simpleLogin.getUserID();
@@ -24,10 +24,16 @@ angular.module('daonVoiceAppApp')
 			$log.info('Got transactions');
 			$scope.transactions = transactions;
 			baseTransactions = transactions;
-			if (!$scope.polling)
+			if (!angular.isDefined(polling))
 			{
-				$timeout(pollForTransactions, 1000);
-				$scope.polling = true;
+				polling = $interval(pollForTransactions, 1000);
+				// Cancel interval on page changes
+				$scope.$on('$destroy', function(){
+					if (angular.isDefined(polling)) {
+						$interval.cancel(polling);
+						polling = undefined;
+					}
+				});
 			}
 		});
 	}
