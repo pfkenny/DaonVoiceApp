@@ -7,6 +7,7 @@ angular.module('daonVoiceAppApp')
 	$scope.filterOptions = {
 		filterText: ''
 	};
+	$scope.polling = false;
 
 	$scope.users = firebaseRef('users');
 	$scope.currUserId = simpleLogin.getUserID();
@@ -18,13 +19,17 @@ angular.module('daonVoiceAppApp')
 
 	//Function to poll rest resource and update the scope every second.
 	function pollForTransactions() {
-		$log.info('About to request transactions');
-		baseTransactions.getList({filter:$scope.filterOptions.filterText}).then(function(transactions) {
-		  $log.info('Got transactions');
-		  $scope.transactions = transactions;
-		  baseTransactions = transactions;
-		  $timeout(pollForTransactions, 1000);
-		});
+		if (!$scope.polling)
+		{
+			$log.info('About to request transactions');
+			baseTransactions.getList({filter:$scope.filterOptions.filterText}).then(function(transactions) {
+			  $log.info('Got transactions');
+			  $scope.transactions = transactions;
+			  baseTransactions = transactions;
+			  $timeout(pollForTransactions, 1000);
+			});
+			$scope.polling = true;
+		}
 	}
 
 	$scope.gridOptions = { data: 'transactions',

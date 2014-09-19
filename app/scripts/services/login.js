@@ -24,7 +24,12 @@ angular.module('angularfire.login', ['firebase', 'angularfire.firebase'])
 
       getUserID: function() {
         assertAuth();
-        return auth.user.uid;
+        if (auth.user)
+        {
+          return auth.user.uid;
+        } else {
+          return null;
+        }
       },
 
 
@@ -75,7 +80,7 @@ angular.module('angularfire.login', ['firebase', 'angularfire.firebase'])
   })
 
   .factory('profileCreator', function(firebaseRef, $timeout) {
-    return function(id, email, callback) {
+    return function(id, email, avatar, companyName, callback) {
       function firstPartOfEmail(email) {
         return ucfirst(email.substr(0, email.indexOf('@'))||'');
       }
@@ -91,7 +96,8 @@ angular.module('angularfire.login', ['firebase', 'angularfire.firebase'])
         return f + str.substr(1);
       }
 
-      firebaseRef('users/'+id).set({email: email, name: firstPartOfEmail(email), mask: generateMask(id)}, function(err) {
+      firebaseRef('users/'+id).set({email: email, name: firstPartOfEmail(email), mask: generateMask(id), avatar: avatar, companyName: companyName}, function(err) {
+        //Save teh avatar
         //err && console.error(err);
         if( callback ) {
           $timeout(function() {

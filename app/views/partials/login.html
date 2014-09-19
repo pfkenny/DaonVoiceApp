@@ -1,5 +1,4 @@
 <div ng-include="'partials/navbar'"></div>
-
 <!-- wait for auth to resolve (avoid flashing login page before redirect -->
 <div ng-cloak class="row">
     <div class="col-md-12">
@@ -12,34 +11,50 @@
 
         
         <p>&nbsp;</p>
-        <form role="form">
-            <fielset>
+        <form role="form" id="loginForm">
+            <fieldset>
                 <legend>Email/Password</legend>
 
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>email</label>
+                            <label>Email</label>
                             <input class="form-control" type="text" ng-model="email" />
                         </div>
 
                         <div class="form-group">
-                            <label>password</label>
+                            <label>Password</label>
                             <input class="form-control" type="password" ng-model="pass" />
                         </div>
 
-                        <div class="form-group" ng-show="createMode">
-                            <label>confirm pass</label>
+                        <div class="form-group" ng-show="createMode && registerMode">
+                            <label>Confirm Password</label>
                             <input class="form-control" type="password" ng-model="confirm" />
+                        </div>
+
+                        <div class="form-group" ng-show="createMode && registerMode">
+                            <label>Company Name</label>
+                            <input class="form-control" type="text" ng-model="companyDisplayName" placeholder="Daon" />
+                        </div>
+
+                        <div class="form-group" ng-show="createMode && !registerMode">
+                            <label>Registration Code</label>
+                            <input class="form-control" type="text" ng-model="regCode" ng-change="validateRegCode()"/>
+                        </div>
+
+                        <div class="form-group" ng-show="createMode && registerMode">
+                            <label>Logo</label>
+                            <BR>
+                            <input type="hidden" id="fileRef" name="fileRef" role="uploadcare-uploader" data-crop="50x50 minimum" data-images-only="true" ng-model="fileRef" ng-update-hidden/>
                         </div>
 
                         <button class="btn btn-primary" ng-click="loginPassword()" ng-hide="createMode">Log In</button>
                         <button class="btn btn-default" ng-click="createMode = true" ng-hide="createMode">Register</button>
-                        <button class="btn btn-success" ng-show="createMode" ng-click="createAccount()">Create Account</button>
+                        <button class="btn btn-success" ng-show="registerMode && createMode" ng-click="createAccount()">Create Account</button>
                         <button class="btn btn-default" ng-show="createMode" ng-click="createMode = false">Cancel</button>
                     </div>
                 </div>
-            </fielset>
+            </fieldset>
         </form>
         
 
@@ -52,3 +67,34 @@
 <div class="footer">
   <p>♥ from the Daon Solutions team</p>
 </div>
+<script>
+  UPLOADCARE_LOCALE = "en";
+  UPLOADCARE_TABS = "file url";
+  UPLOADCARE_AUTOSTORE = true;
+  UPLOADCARE_PUBLIC_KEY = "35eddc8ba1f5dfca0664";
+</script>
+<script src="//ucarecdn.com/widget/1.3.1/uploadcare/uploadcare-1.3.1.min.js"></script>
+<script>
+//Wait until the uploadcare widget downloads and then register a trigger to
+//detect when files have finished downloading. Once the event is fired then
+//trigger the change event on the hidden input form to propagate the fileRef
+//to the angular model.
+function regUCTrigger()
+{
+  setTimeout(function(){
+    if (typeof uploadcare === 'undefined'){
+        regUCTrigger();
+    } else {
+      var widget = uploadcare.Widget('[role=uploadcare-uploader]');
+      widget.onChange(function(file) {
+        if (file) {
+          file.done(function(info) {
+            $("#loginForm #fileRef").trigger('change');
+          });
+        };
+      });
+    }
+  }, 500);
+};
+regUCTrigger();
+</script>

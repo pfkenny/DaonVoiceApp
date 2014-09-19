@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"$roo",
+				"$rootScope	AngularJS"
+			],
+			[
+				"com",
+				"conmpanyName"
+			],
+			[
+				"user",
+				"userProfile"
+			],
+			[
 				"is",
 				"isMasked"
 			],
@@ -64,11 +76,12 @@
 	"buffers":
 	[
 		{
-			"file": "app/scripts/controllers/transactions.js",
+			"file": "/C/Users/pkenny.DAON/Desktop/HRP.txt",
 			"settings":
 			{
-				"buffer_size": 2385,
-				"line_ending": "Windows"
+				"buffer_size": 324,
+				"line_ending": "Windows",
+				"name": "Team lead responsibilities"
 			}
 		}
 	],
@@ -112,29 +125,36 @@
 	},
 	"file_history":
 	[
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/api.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/services/login.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/routesecurity.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/transactions.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/addtransaction.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/transactions/addTransaction.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/config/express.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/server.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/routes.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/index.js",
-		"/C/Users/pkenny.DAON/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/L9A8I49S/transactions.json",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
-		"/C/Users/pkenny.DAON/Desktop/transaction.csv",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/transactions.html",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/login.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/api.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/routes.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/login.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/addtransaction.js",
+		"/C/Users/pkenny.DAON/Downloads/voter cds in action",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/transactions/addTransaction.html",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/navbar.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/navbar.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/services/login.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/directives/hiddenInputBinding.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/transactions.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/accounts.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/simpleLoginTools.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/routesecurity.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/accounts.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/app.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/daon_voice_api.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/index.html",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/config.js",
+		"/C/temp/face.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/server.js",
+		"/C/Users/pkenny.DAON/Desktop/bio.txt",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/config/express.js",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/lib/controllers/index.js",
+		"/C/Users/pkenny.DAON/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/L9A8I49S/transactions.json",
+		"/C/Users/pkenny.DAON/Desktop/transaction.csv",
+		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/transactions.html",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/styles/main.css",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/transactions/removeTemplate.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/navbar.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/index.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/app.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/bower.json",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/.bowerrc",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/bower_components/angular-ui-bootstrap-bower/ui-bootstrap.js",
@@ -145,18 +165,15 @@
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/package.json",
 		"/C/temp/blah/app/views/main.html",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/main.html",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/login.html",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/controllers/main.js",
 		"/C/temp/blah/app/views/login.html",
 		"/C/temp/blah/app/scripts/angularfire/simpleLoginTools.js",
 		"/C/temp/blah/app/index.html",
 		"/C/temp/blah/karma.conf.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/services/firebase.js",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/views/partials/accounts.html",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/robots.txt",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/test/spec/controllers/main.js",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/bower_components/angularfire/bower.json",
-		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/app/scripts/angularfire/config.js",
 		"/C/Users/pkenny.DAON/Desktop/Changes.txt",
 		"/C/Users/pkenny.DAON/Documents/GitHub/DaonVoiceApp/README.md",
 		"/C/Users/pkenny.DAON/Desktop/voice1.wav",
@@ -193,7 +210,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"C:\\Users\\pkenny.DAON\\Documents\\GitHub\\DaonVoiceApp"
@@ -204,6 +221,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"apply",
+			"24",
+			"scripts",
+			"createMode",
+			"_login",
 			"_authenticated",
 			"param",
 			"&",
@@ -337,24 +359,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/scripts/controllers/transactions.js",
+					"file": "/C/Users/pkenny.DAON/Desktop/HRP.txt",
 					"settings":
 					{
-						"buffer_size": 2385,
+						"buffer_size": 324,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								939,
-								939
+								81,
+								81
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"auto_name": "Team lead responsibilities",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

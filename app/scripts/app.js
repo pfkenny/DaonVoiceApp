@@ -11,7 +11,8 @@ angular.module('daonVoiceAppApp', [
   'angularfire.login',
   'restangular',
   'ngGrid',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'hiddenInputBinding'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
