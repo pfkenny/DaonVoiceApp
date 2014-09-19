@@ -23,7 +23,7 @@ module.exports = function(config) {
       'app/bower_components/firebase-simple-login/firebase-simple-login.js',
       'app/bower_components/lodash/dist/lodash.compat.js',
       'app/bower_components/restangular/dist/restangular.js',
-      'app/bower_components/ng-grid/ng-grid-2.0.11.min.js',
+      'app/bower_components/ng-grid/ng-grid-2.0.13.min.js',
       'app/bower_components/angular-ui-bootstrap-bower/ui-bootstrap.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
